@@ -96,7 +96,7 @@ public class Principal {
     }
 
     private void FiltroLibrosIdioma() {
-        System.out.println("Ingrese el genero que desea buscar");
+        System.out.println("Ingrese el idioma que desea buscar");
         Idioma consulta = Idioma.fromEspanol(teclado.next());
         List<Libro> libros = repository.findByIdiomasContaining(consulta);
         libros.forEach(System.out::println);
